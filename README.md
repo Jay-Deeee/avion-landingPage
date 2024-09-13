@@ -1,0 +1,1 @@
+My entry to our Landing Page project for the Avion School course. This is a project that aims for us to use everything we've learned from the course in the past few weeks of the frontend development portion of the course.
