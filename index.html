@@ -11,17 +11,13 @@
     <body>
         <section id="header">
             <!-- navbar -->
-            <nav class="navbar">
+            <nav id="nav-bar">
                 <a href="#hero" class="brand left">
                     Brand Here
                 </a>
-                <!-- toggle button for mobile nav -->
-                <button class="navbar-toggler right d-dn" type="button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-
+                
                 <!-- navbar links -->
-                <div id="main-nav right">
+                <div id="main-nav" class="right">
                     <ul class="navbar-nav m-dn">
                         <li class="nav-item">
                             <a href="#topics" class="nav-link">About</a>
@@ -30,7 +26,7 @@
                             <a href="#reviews" class="nav-link">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact Us</a>
+                            <a href="#form" class="nav-link">Form</a>
                         </li>
                         <li class="nav-item d-dn">
                             <a href="#pricing" class="nav-link">Pricing</a>
@@ -40,23 +36,25 @@
                         </li>
                     </ul>
                 </div> 
+
+                <!-- toggle button for mobile nav -->
+                <button class="navbar-toggler right d-dn" type="button">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>
 
             <!-- hero -->
             <div id="hero">
-                <div class="container-lg">
-                    <div class="row justify-content-center">
-                        <div class="col-md-5 text-center text-md-start">
-                            <h1>
-                                <div class="display-2">Title here</div>
-                                <div class="display-6 text-muted">subtext</div>
-                            </h1>
-                            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
-                        </div>
-                        <div class="col-md-7 text-center">
-                        </div>
-                    </div>
+                <div class="hero-info d-left">
+                    <h1>
+                        <div class="">Title here</div>
+                        <div class="">subtext</div>
+                    </h1>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#pricing" class="btn">Buy Now</a>
+                </div>
+                <div class="m-dn">
+                    <img src="" alt="" class="img" />
                 </div>
             </div>
         </section>

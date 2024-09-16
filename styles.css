@@ -24,11 +24,11 @@ section {
 }
 
 .left {
-    align-items: start;
+    justify-self: start;
 }
 
 .right {
-    align-items: end;
+    justify-self: end;
 }
 
 #header {
@@ -37,15 +37,17 @@ section {
     padding: 0;
 }
 
-.navbar {
+#nav-bar {
     display: flex;
     background-color: #023e8a;
-    place-content: space-between;
-    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
 }
 
 .brand {
     color: #ffffff;
+    font-size: 30px;
 }
 
 .navbar-toggler {
@@ -55,7 +57,22 @@ section {
     font-size: 18px;
 }
 
-@media only screen and (min-width: 720px) {
+#hero {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 60px;
+}
+
+.hero-info {
+    grid-column: 1/9;
+    justify-self: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
     .d-dn {
         display: none;
     }
@@ -64,9 +81,13 @@ section {
         display: block;
     }
 
+    .d-left {
+        justify-self: start;
+    }
+
     .navbar-nav {
         display: flex;
-        gap: 30px;
+        gap: 50px;
         list-style: none;
     }
 
@@ -79,4 +100,7 @@ section {
         padding: 10px;
         border-radius: 10px;
     }
+}
+
+@media only screen and (min-width:1024) {
 }
