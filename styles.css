@@ -20,6 +20,10 @@ a {
     display: none;
 }
 
+.desktop {
+    display: none;
+}
+
 section {
     padding: 60px 0;
 }
@@ -47,9 +51,12 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
     padding: 18px 50px;
     height: 70px;
     border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
 }
 
 #header-img {
@@ -59,7 +66,9 @@ h1 {
 .navbar-toggler {
     background-color: #ffffff;
     color: #0050af;
-    border: none;
+    border: 1px solid #0050af80;
+    border-radius: 8px;
+    padding: 8px 10px;
     font-size: 18px;
 }
 
@@ -82,7 +91,6 @@ h1 {
 }
 
 .img {
-    display: block;
     width: 100%;
 }
 
@@ -102,6 +110,7 @@ h1 {
 
 p {
     text-indent: 50px;
+    text-align: justify;
 }
 
 .hero-btn {
@@ -165,14 +174,23 @@ p {
     }
 
     .hero-info {
-        grid-column: 1/5;
+        grid-column: 1/9;
         text-align: justify;
     }
 
     .hero-img {
+        display: none;
         grid-column: 6/9;
     }
 }
 
-@media only screen and (min-width:1024) {
+@media only screen and (min-width: 1024px) {
+    .hero-info {
+        grid-column: 1/5;
+        text-align: justify;
+    }
+    
+    .hero-img {
+        display: block;
+    }
 }
