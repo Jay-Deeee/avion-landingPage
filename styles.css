@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,6 +32,11 @@ section {
     justify-self: end;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 1000;
+}
+
 #header {
     display: flex;
     flex-direction: column;
@@ -39,20 +45,20 @@ section {
 
 #nav-bar {
     display: flex;
-    background-color: #023e8a;
     justify-content: space-between;
     align-items: center;
     padding: 18px 50px;
+    height: 70px;
+    border-bottom: 1px solid gray;
 }
 
-.brand {
-    color: #ffffff;
-    font-size: 30px;
+#header-img {
+    height: 35px;
 }
 
 .navbar-toggler {
-    background-color: #023e8a;
-    color: white;
+    background-color: #ffffff;
+    color: #0050af;
     border: none;
     font-size: 18px;
 }
@@ -68,8 +74,51 @@ section {
 
 .hero-info {
     grid-column: 1/9;
+    display: flex;
+    flex-direction: column;
     justify-self: center;
     text-align: center;
+    gap: 15px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.hi-title {
+    display: flex;
+    gap: 10px;
+}
+
+.hi-span {
+    color: gray;
+    font-weight: 500;
+}
+
+.hi-subtext {
+    color: gray;
+}
+
+p {
+    text-indent: 50px;
+}
+
+.hero-btn {
+    background-color: #3272bf;
+    color: #ffffff;
+    font-weight: 900;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 1px 2px #0050af;
+    transition: transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.03);
+    text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,18 +136,41 @@ section {
 
     .navbar-nav {
         display: flex;
+        align-items: center;
         gap: 50px;
         list-style: none;
     }
 
     .nav-link {
-        color: #ffffff;
+        color: #0050af;
+        font-weight: 900;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        font-size: 105%;
     }
 
     .nav-btn {
-        background-color: #fedc56;
+        background-color: #0050af;
+        color: #ffffff;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 20px;
+        border: 1px solid #0050af;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-btn:hover {
+        transform: scale(1.1);
+    }
+
+    .hero-info {
+        grid-column: 1/5;
+        text-align: justify;
+    }
+
+    .hero-img {
+        grid-column: 6/9;
     }
 }
 
