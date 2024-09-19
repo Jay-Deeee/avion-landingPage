@@ -280,6 +280,10 @@ h1 {
     text-decoration: underline;
 }
 
+#calc {
+    background-color: #eff0f5;
+}
+
 #subscribe {
     background-color: #0050af;
     color: #ffffff;
@@ -314,6 +318,11 @@ h1 {
     border: 1px solid #818589;
     border-radius: 20px;
     margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sub-btn:hover {
+    transform: scale(1.03);
 }
 
 .sub-links {
@@ -357,13 +366,29 @@ h1 {
     background-color: #000000;    
 }
 
-@media only screen and (max-width: 500px) {
+::placeholder {
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) { 
+    .hi-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+    }
+    
     #reviews {
         padding-inline: 3%;
     }
 
     .rev-container-1, .rev-container-2 {
         gap: 0;
+    }
+
+    .rev-container-2 {
+        row-gap: 10px;
     }
 }
 
@@ -400,6 +425,7 @@ h1 {
     .nav-btn {
         background-color: #0050af;
         color: #ffffff;
+        font-weight: 700;
         padding: 10px;
         border-radius: 20px;
         border: 1px solid #0050af;
