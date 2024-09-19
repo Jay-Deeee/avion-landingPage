@@ -13,7 +13,7 @@
         <section id="header">
             <!-- navbar -->
             <nav id="nav-bar">
-                <a class="brand left" href="#hero">
+                <a class="brand left" href="#">
                     <img id="header-img" src="./assets/logo.png" alt="Athlene Logo" />
                 </a>
                 
@@ -27,13 +27,13 @@
                             <a class="nav-link" href="#reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#survey">Subscribe</a>
+                            <a class="nav-link" href="#calc">Calculator</a>
                         </li>
                         <li class="nav-item d-dn">
-                            <a class="nav-link" href="#pricing">Pricing</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                         <li class="nav-item m-dn">
-                            <button class="nav-btn" href="#pricing">Buy Now</button>
+                            <a href="#subscribe"><button class="nav-btn">Subscribe</button></a>
                         </li>
                     </ul>
                 </div> 
@@ -245,8 +245,8 @@
                             <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></i></a>
                         </div>
                         <div class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i> 0
-                            <i class="fa-solid fa-thumbs-down"></i> 0
+                            <i class="fa-solid fa-thumbs-up"></i> 2
+                            <i class="fa-solid fa-thumbs-down"></i> 1
                         </div>
                     </div>
                     <div>
@@ -276,7 +276,7 @@
                             <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></i></a>
                         </div>
                         <div class="likes">
-                            <i class="fa-solid fa-thumbs-up"></i> 2
+                            <i class="fa-solid fa-thumbs-up"></i> 1
                             <i class="fa-solid fa-thumbs-down"></i> 0
                         </div>
                     </div>
@@ -288,59 +288,34 @@
             </div>
         </section>
 
-        <!-- form -->
-        <section id="survey">
-            <h2>Tell us more about yourself!</h2>
+        <!-- calculator -->
+        <section id="calc">
+        </section>
+
+        <!-- subscribe -->
+        <section id="subscribe">
+            <h2>Subscribe to our Newsletter!</h2>
+            <h4>Be the first to know new collections and exclusive offers</h4>
             <form id="form" class="container" method="post"></form>
-                <label id="email-label" for="email">E-mail:</label>
+                <!-- <label id="email-label" for="email">Email:</label> -->
                 <input id="email" class="input" type="email" name="email" placeholder="Enter e-mail address" required>
                 <br />
-                <label id="name-label" for="name">Full name:</label>
-                <input id="name" class="input" type="text" name="name" placeholder="Enter full name" required>
-                <br />
-                <label id="number-label" for="age">Age:</label>
-                <input id="number" class="input" type="number" name="age" min="18" max="80" placeholder="00">
-                <br />
-                <label for="birthday">Birthday:</label>
-                <input id="birthday" class="input" type="date" name="date" max="2024-09-04">
-                <br />
-                <label for="gender">Gender:</label>
-                <input class="radio" type="radio" name="gender" value="male"> Male
-                <input class="radio" type="radio" name="gender" value="female"> Female
-                <input class="radio" type="radio" name="gender" value="other"> Other
-                <br />
-                <label for="condition">How are you feeling today?:</label>
-                <input class="radio" type="checkbox" name="condition" value="good">Good
-                <input class="radio" type="checkbox" name="condition" value="bad">Bad
-                <input class="radio" type="checkbox" name="condition" value="both">Both
-                <input class="radio" type="checkbox" name="condition" value="all">All of the Above
-                <br />
-                <label for="pizza">Favorite Pizza Topping:</label>
-                <select id="dropdown" class="dropdown margin" name="pizza">
-                    <option selected disabled>Choose option</option>
-                    <option value="cheese">Cheese</option>
-                    <option value="meat">Pepperoni/Meat</option>
-                    <option value="seafood">Seafood</option>
-                    <option value="veggies">Vegetables</option>
-                    <option value="pineapple" disabled>Pineapple</option>
-                </select>
-                <br />
-                <label for="pizza">Who would you choose to narrate your life:</label>
-                <select class="dropdown margin" name="narrator">
-                    <option selected disabled>Choose option</option>
-                    <option value="correct">Morgan Freeman</option>
-                    <option value="wrong" disabled>Anyone else is wrong</option>
-                </select>
-                <br />
-                <label for="comments">Comments/Suggestions:</label>
-                <textarea class="input margin" name="comments" maxlength="400" rows="8" cols="50" placeholder="Put what you want, I probably won't read it." required></textarea>
-                <br />
-                <input class="button" type="submit" value="Submit">
+                <input class="sub-btn" type="submit" value="Submit">
             </form>
+            <div class="sub-links">
+                <a href="https://athlene.com.ph/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i></a>
+                <a href="https://www.facebook.com/athlenenutrition" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/athlenenutrition/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </section>
 
         <!-- footer -->
         <section id="footer">
+            <p>C0pyright © 2024 "I have no affiliation with Athlene Nutrition PH, I just borrowed their brand for the purpose of this project"</p>
         </section>
+
+        <a href="#">
+            <button id="topBtn" title="Go to the top"><i class="fa-solid fa-arrow-up"></i></button>
+        </a>
     </body>
 </html>
