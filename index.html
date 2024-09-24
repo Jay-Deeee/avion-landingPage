@@ -294,31 +294,53 @@
             <h2>Review Videos</h2>
             <div class="vids m-dn">
                 <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/nHxGk6yXMU4?si=UicxSalfazrzj4ku" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; gyroscope; 
-                picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen></iframe>
+                src="https://www.youtube.com/embed/nHxGk6yXMU4?si=UicxSalfazrzj4ku" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/zGCWtmdTyRE?si=OGRgQ4LZJqvFxmV1" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; gyroscope; 
-                picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zGCWtmdTyRE?si=OGRgQ4LZJqvFxmV1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
                 allowfullscreen></iframe>
             </div>
         </section>
 
         <!-- calculator - under construction -->
         <section id="calc">
-            <!-- <iframe class="m-dn" width="315" height="560"
-            src="https://youtube.com/embed/xEcQZ-iGQys?si=Vt-qKKU6xC3IbL6W>"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe> -->            
+            <!-- <div class="calc-container">
+                <div class="calc-vid m-dn">
+                <iframe class="m-dn" width="315" height="560" src="https://youtube.com/embed/xEcQZ-iGQys?si=Vt-qKKU6xC3IbL6W>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            
+                <form class="bf-calc" method="post">
+                    <h2>Bodyfat% Calculator</h2>
+                    <div class="bf-input-1">
+                        <label for="gender">
+                            Sex:
+                        </label>
+                            <input id="g-input-m" type="radio" name="gender" value="male"> Male
+                            <input id="g-input-f" type="radio" name="gender" value="female"> Female
+                    </div>
+                    <div class="bf-input-2">
+                        <label>Height (cm)</label>
+                            <input id="height-input" class="calc-input" type="number">
+                    </div>
+                    <div class="bf-input-2">       
+                        <label>Neck circumference (cm)</label>
+                            <input id="neck-input" class="calc-input"  type="number">
+                    </div>
+                    <div class="bf-input-2">
+                        <label>Waist circumference (cm)</label>
+                            <input id="waist-input" class="calc-input"  type="number">
+                    </div>
+                    <div class="bf-input-2">
+                        <label>Hip circumference (cm)</label>
+                            <input id="hip-input" class="calc-input"  type="number">
+                    </div>          
+                    <button id="calc-btn" type="submit" onclick="Calculate()">Calculate</button>
+                        
+                    <div class="bf-value">
+                        <h4>Body fat %: </h4>
+                        <div id="bf-output"></div>
+                    </div>
+                </form>
+            </div> -->
         </section>
 
         <!-- subscribe -->
@@ -327,7 +349,7 @@
             <h4>Be the first to know new collections and exclusive offers</h4>
             <form id="form" class="container" method="post">
                 <!-- <label id="email-label" for="email">Email:</label> -->
-                <input id="email" class="input" type="email" name="email" placeholder="Enter e-mail address" required>
+                <input id="email" class="input" type="email" name="email" autocomplete="off" placeholder="Enter e-mail address" required>
                 <br />
                 <input class="sub-btn" type="submit" value="Submit">
             </form>
